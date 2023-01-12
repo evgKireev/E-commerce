@@ -1,0 +1,50 @@
+%travels-700 {
+  font-family: 'TT Travels-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%travels-600 {
+  font-family: 'TT Travels-DemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%travels-500 {
+  font-family: 'TT Travels-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%travels-400 {
+  font-family: 'TT Travels-Regular', sans-serif;
+  font-weight: 400;
+}
+
+$default: #3a3a3a;
+$acsent: #d02727;
+$bg: radial-gradient(
+    61.76% 61.76% at 50.95% 2.94%,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  ),
+  radial-gradient(
+    80.05% 998.03% at 56.31% 44.33%,
+    rgba(208, 39, 39, 0.88) 0%,
+    #d02727 100%
+  );
+
+%btn {
+  @extend%travels-600;
+  padding: 27px 92px;
+  background: $bg;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f3f3f3;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: 0px 4px 0px #d02727;
+  &:hover {
+    opacity: 80%;
+    transition: all 0.5s;
+  }
+}

@@ -29,6 +29,9 @@
   background: url('../images/moon1.png') bottom left no-repeat,
     url('../images/moon3.png') center top no-repeat,
     url('../images/moon2.png') center right no-repeat;
+  &__inner {
+    position: relative;
+  }
 }
 
 .header-two--active {
@@ -36,6 +39,7 @@
 }
 .header-desc-two {
   width: max-content;
+  padding-bottom: 100px;
 }
 
 .header-desc {
@@ -99,7 +103,7 @@
         #3a3a3a 0%,
         #505050 100%
       );
-      width: 702px;
+      width: 43vw;
       height: 184px;
       padding: 50px 117px 50px 50px;
       border-radius: 10px;
@@ -113,18 +117,18 @@
 
   &__btn-two {
     @extend%btn;
+    display: flex;
+    align-items: center;
+    max-width: 542px;
+    justify-content: center;
+    gap: 10px;
     background: none;
     box-shadow: none;
     background-color: #218ab7;
-    padding: 29px 105px 29px 161px;
-    position: relative;
     cursor: pointer;
     img {
       width: 31px;
       height: 28px;
-      position: absolute;
-      left: 100px;
-      top: 25px;
     }
   }
 
@@ -146,6 +150,14 @@
     max-width: 377px;
     letter-spacing: -0.03em;
     font-feature-settings: 'pnum' on, 'lnum' on;
+  }
+
+  &__images-two {
+    position: absolute;
+    top: 35px;
+    right: -70px;
+    overflow: hidden;
+    height: 865px;
   }
 }
 

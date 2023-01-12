@@ -48,6 +48,11 @@
       line-height: 115%;
       max-width: 351px;
       margin-bottom: 21px;
+      p {
+        font-size: 18px;
+        width: 502px;
+        padding: 50px 81px 25px 40px;
+      }
     }
     &__title-text {
       font-weight: 400;
@@ -55,8 +60,7 @@
       line-height: 15.4px;
       padding-bottom: 5px;
     }
-    &__title-title,
-    &__title-two {
+    &__title-title {
       font-weight: 700;
       font-size: 45px;
       line-height: 110%;
@@ -67,6 +71,10 @@
       font-size: 17px;
       line-height: 20px;
       padding: 19px 63px;
+    }
+    &__images-two {
+      right: 45px;
+      height: 840px;
     }
   }
   .header-photo {
@@ -115,11 +123,39 @@
   .container {
     max-width: 735px;
   }
+  .header-desc-two {
+    padding-bottom: 0;
+  }
+
+  .header-desc__images-two {
+    right: -115px;
+    width: 521px;
+    top: 30px;
+    height: 685px;
+  }
   .header-photo {
     &__info {
       top: 85px;
       left: 275px;
     }
+  }
+
+  .header-desc__sub-title {
+    padding-top: 140px;
+    font-size: 20px;
+  }
+  .header-desc__title-two {
+    font-size: 45px;
+    max-width: 400px;
+    margin-bottom: 40px;
+  }
+  .header-desc__text p {
+    font-size: 16px;
+    width: 315px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .info {
     &__title {
@@ -297,6 +333,27 @@
 }
 
 @media (max-width: 860px) {
+  .header-desc__text p {
+    width: 245px;
+    padding: 15px;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .header-desc__title-two {
+    font-size: 32px;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  .header-desc__images-two {
+    width: 381px;
+    top: 0;
+    height: 500px;
+    right: 0px;
+  }
+  .header-desc__sub-title {
+    padding-top: 50px;
+    font-size: 15px;
+  }
   .header-desc {
     width: max-content;
     &__data {
@@ -315,8 +372,7 @@
       line-height: 110%;
       padding-bottom: 5px;
     }
-    &__title-title,
-    &__title-two {
+    &__title-title {
       font-size: 37px;
       max-width: 213px;
     }
@@ -349,6 +405,9 @@
 @media (max-width: 780px) {
   .container {
     max-width: 620px;
+  }
+  .header-desc__images-two {
+    right: -65px;
   }
 
   .info {
@@ -589,6 +648,35 @@
   .container {
     max-width: 400px;
   }
+  .header-desc__images-two {
+    position: static;
+    width: 280px;
+    margin-top: -60px;
+    height: 430px;
+  }
+  .header-two {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .header-desc__sub-title {
+    padding-top: 40px;
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+  .header-desc__title-two {
+    font-size: 27px;
+    max-width: 300px;
+    margin-bottom: 5px;
+  }
+  .header-desc__text p {
+    padding: 10px;
+    font-size: 10px;
+    height: 60px;
+  }
   .header {
     &__inner {
       flex-direction: column;
@@ -615,13 +703,11 @@
       line-height: 110%;
       padding-bottom: 5px;
     }
-    &__title-title,
-    &__title-two {
+    &__title-title {
       font-size: 37px;
       max-width: 213px;
     }
-    &__btn,
-    &__btn-two {
+    &__btn {
       position: relative;
       font-size: 14px;
       line-height: 17px;
@@ -629,6 +715,20 @@
       top: 220px;
       right: 0px;
       z-index: 1;
+    }
+    &__btn-two {
+      position: relative;
+      font-size: 12px;
+      line-height: 14px;
+      padding: 10px;
+      top: 165px;
+      right: -47px;
+      z-index: 1;
+      max-width: 210px;
+      img {
+        width: 22px;
+        height: 22px;
+      }
     }
   }
   .header-photo {
@@ -859,14 +959,12 @@
     &__title-svg {
       height: 45px;
     }
-    &__title-title,
-    &__title-two {
+    &__title-title {
       font-size: 30px;
       max-width: 176px;
       line-height: 110%;
     }
-    &__btn,
-    &__btn-two {
+    &__btn {
       font-size: 12px;
       line-height: 14px;
       top: 170px;
